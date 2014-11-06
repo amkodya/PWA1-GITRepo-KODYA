@@ -337,6 +337,22 @@ fullName();
 
 */
 
-    
+  a = (function(){
+      var privateFunction = function(){
+          alert('hello');
+
+  }
+
+      return{
+          publicFunction: function(){
+              privateFunction();
+          }
+      }
+
+})();
+
+
+a.publicFunction();
+
 
 })(); // end wrapper
