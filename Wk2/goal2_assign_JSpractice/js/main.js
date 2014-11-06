@@ -85,7 +85,18 @@
          - console.log the answer outside of the function*/
 
 
-    var vowelsInWord = function()
+    var vowelsInWord = function(str1){
+        var str1 = 'Outrageous';
+        var numberOf = (str1.indexOf('a')) + (str1.indexOf('e')); + (str1.indexOf('i')) + (str1.indexOf('o')) + (str1.indexOf('u'));
+        return numberOf.length;
+
+
+
+    };
+
+    var lengthVows = vowelsInWord();
+    console.log('The sentence has '+ lengthVows + ' vowels.');
+
 
 
      /*6.  create a function named 'findNum'
@@ -96,8 +107,21 @@
          - else - create an array with all of the even numbers
             from the array
          - return the array
-         - console.log the answer outside of the function
-     ********************************************/
+         - console.log the answer outside of the function*/
+
+
+       var findNum = function(){
+
+
+
+       }
+
+
+
+
+
+
+     /* ********************************************/
 
     console.log('------ Goal2: Assignment: JavaScript Practice ----------');
 
