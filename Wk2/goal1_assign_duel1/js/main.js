@@ -71,9 +71,9 @@ Assignment: Goal1: Assignment: Duel1
         if (playerOne[2]<1 && playerTwo[2]<1){   // if both players damage is under 1, both players die    //changed to array variable
             result = "You Both Die :(";            //sends "you both die" to alert
         }else if(playerOne[2]<1){                //if player1 health is under 1                           //changed to array  variable
-            result =playerTwo[2]+" WINS!!!";     //then player 2 wins - put out to alert box              //changed to array  variable
+            result =playerTwo[0]+" WINS!!!";     //then player 2 wins - put out to alert box              //changed to array  variable
         }else if (playerTwo[2]<1){              // if player2 health under 1                               //changed to array variable
-            result = playerOne[2]+" WINS!!!";     //then player 2 wins and result is put into alert          //changed to array variable
+            result = playerOne[0]+" WINS!!!";     //then player 2 wins and result is put into alert          //changed to array variable
         };
         return result;                     //returns result out of function
     };
