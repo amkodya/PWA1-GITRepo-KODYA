@@ -2,7 +2,7 @@
 /*
 
 Name: Ashley Kodya
-Date: 11/02/2014
+Date: 11/07/2014
 Assignment: Goal1: Assignment: Duel1
 
  */
