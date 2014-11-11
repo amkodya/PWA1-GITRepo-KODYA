@@ -76,31 +76,31 @@
             cornerOf: ['University', 'Semoran']
 
         },
-        showMyAddress: function(){
+        showMyAddress: function () {
             var addr = this.address.street + ', ' + this.address.city;
             return addr;
         }
-};
+    };
 
     console.log(thatGuy.showMyAddress());
-    console.log(thatGuy.address.street+', '+thatGuy.address.city);
+    console.log(thatGuy.address.street + ', ' + thatGuy.address.city);
 
 //properties & methods
-/*
-	- objects are useful primarily for properties and methods:
-		- properties are variable/keys that belong to an object only
-		- methods are function/keys that belong to the object only 
-		= these members are the foundation of an oop model
-*/
+    /*
+     - objects are useful primarily for properties and methods:
+     - properties are variable/keys that belong to an object only
+     - methods are function/keys that belong to the object only
+     = these members are the foundation of an oop model
+     */
 
-console.log('------Objects - properties & methods ----------');
+    console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
-var fsStudent = {};
+    var fsStudent = {};
     fsStudent.age = 22;
     fsStudent.career = 'Wen Dev';
-    fsStudent.sayHello = function(){
+    fsStudent.sayHello = function () {
         console.log('Hello!');
     }
 
@@ -112,29 +112,29 @@ var fsStudent = {};
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
-fsStudent.sayHello();
-fsStudent['sayHello']();
+    fsStudent.sayHello();
+    fsStudent['sayHello']();
 
     console.log(fsStudent.age);
     console.log(fsStudent['age']);
 
 
-/* --------------
-Method 2 "OBJECT Literal"
+    /* --------------
+     Method 2 "OBJECT Literal"
 
-	- we can also use the object literal syntax to create a new object and 
-		fill it at the same time.
+     - we can also use the object literal syntax to create a new object and
+     fill it at the same time.
 
-	- below is the same object as in Method 1
-*/
+     - below is the same object as in Method 1
+     */
 
-var fsStudent = {
-    age: 22,
-    career: 'Web Dev',
-    sayHello: function(){
-        console.log('Hello!');
-    }
-};
+    var fsStudent = {
+        age: 22,
+        career: 'Web Dev',
+        sayHello: function () {
+            console.log('Hello!');
+        }
+    };
 
     fsStudent.sayHello();
     fsStudent['sayHello']();
@@ -143,153 +143,146 @@ var fsStudent = {
     console.log(fsStudent['age']);
 
 
-
 //---------------------------------------------
 
 
-/******************************************************************************
-STUDENT ACTIVITY 1:
+    /******************************************************************************
+     STUDENT ACTIVITY 1:
 
-	PART 1:
-	1.  Create an object that has the following keys.
-         a. schoolName (i.e "Full Sail")
-         b. address  (i.e "123 University Ave")
-         c. studentCount (i.e 16000)
-         d. students (use an array of objects) - create at least 3 objects in the array)
-             i. name (i.e "James Bond")
-             ii. GPA (i.e 3.9)
-             iii. classes (use an array with the ability to store at least 2 class names)
-                    (i.e ['PWA1', 'PWA2'])
-*/
+     PART 1:
+     1.  Create an object that has the following keys.
+     a. schoolName (i.e "Full Sail")
+     b. address  (i.e "123 University Ave")
+     c. studentCount (i.e 16000)
+     d. students (use an array of objects) - create at least 3 objects in the array)
+     i. name (i.e "James Bond")
+     ii. GPA (i.e 3.9)
+     iii. classes (use an array with the ability to store at least 2 class names)
+     (i.e ['PWA1', 'PWA2'])
+     */
 
- var obj1 = {
-    schoolName: 'Full Sail',
-    address: '123 University Ave',
-    studentCount: 16000,
-    students:[
-        {name: 'James Bond', gpa: 3.9, classes: ['PWA1','PWA2']},
-        {name:'Albert Einstein', gpa:4.0},
-        {name:'James Bond', gpa:3.9}
+    var obj1 = {
+        schoolName: 'Full Sail',
+        address: '123 University Ave',
+        studentCount: 16000,
+        students: [
+            {name: 'James Bond', gpa: 3.9, classes: ['PWA1', 'PWA2']},
+            {name: 'Albert Einstein', gpa: 4.0},
+            {name: 'James Bond', gpa: 3.9}
         ]
 
-}
+    }
 
-  /*      2.	console.log the following
-             a. school name in both the dot syntax and index syntax
-             b  create a variable name "newCnt" that is equal to studentCount, and console.log
-                    the studentCount using the newCnt variable.
-             c.  console.log the address using index syntax
-             d. one student's GPA using dot syntax and index syntax
- ----------------------------------------------------------------------------- */
+    /*      2.	console.log the following
+     a. school name in both the dot syntax and index syntax
+     b  create a variable name "newCnt" that is equal to studentCount, and console.log
+     the studentCount using the newCnt variable.
+     c.  console.log the address using index syntax
+     d. one student's GPA using dot syntax and index syntax
+     ----------------------------------------------------------------------------- */
 
-console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
+    console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 // this is integrating multiple data types - object with an array of objects
 
-console.log('a.');
-console.log(obj1.schoolName);
-console.log(obj1['schoolName']);
+    console.log('a.');
+    console.log(obj1.schoolName);
+    console.log(obj1['schoolName']);
 
-console.log('b.');
-var newCnt = 'studentCount';
-console.log(obj1[newCnt]);
+    console.log('b.');
+    var newCnt = 'studentCount';
+    console.log(obj1[newCnt]);
 
-console.log('c.');
-var fieldName1 = 'address';
-console.log(obj1[fieldName1]);
+    console.log('c.');
+    var fieldName1 = 'address';
+    console.log(obj1[fieldName1]);
 
-console.log('d.');
-console.log('James Bonds GPA:', obj1.students[2].gpa);
-console.log('James Bonds GPA:', obj1['students'][2]['gpa']);
+    console.log('d.');
+    console.log('James Bonds GPA:', obj1.students[2].gpa);
+    console.log('James Bonds GPA:', obj1['students'][2]['gpa']);
 
 
-/* ----------------------------------------------------------------------------
- STUDENT ACTIVITY 2:
+    /* ----------------------------------------------------------------------------
+     STUDENT ACTIVITY 2:
 
-    1.  Using the above code, create a function that will find the average grade
-        a. create an anonymous function named "gradeAvg"
-        b. the function should accept as a parameter the object above
-        c. create a for loop to total up the average grade for ALL students
-        d. "return" the average GPA answer to the item that called the function
+     1.  Using the above code, create a function that will find the average grade
+     a. create an anonymous function named "gradeAvg"
+     b. the function should accept as a parameter the object above
+     c. create a for loop to total up the average grade for ALL students
+     d. "return" the average GPA answer to the item that called the function
 
-    2.  console.log the average grade by calling the gradeAvg method.
------------------------------------------------------------------------------ */
-console.log('----- activity 2 -----');
+     2.  console.log the average grade by calling the gradeAvg method.
+     ----------------------------------------------------------------------------- */
+    console.log('----- activity 2 -----');
 
     console.log(' --- 1 ---');
 
     console.log('a.');
 
-    var gradeAvg = function(obj){
+    var gradeAvg = function (obj) {
         var count = 0;
         var total = 0;
-        for (var i= 0, j = obj.students.length; i<j; i++){
+        for (var i = 0, j = obj.students.length; i < j; i++) {
             count++;
-        total = total + obj.students[i]['gpa'];
+            total = total + obj.students[i]['gpa'];
 
-    };
-        return total/count;
+        }
+        ;
+        return total / count;
     };
 
     console.log('Average Grade: ', gradeAvg(obj1));
 
 
+    /* ===============================================================
+     The for-in object loop
+     ------------------------------------------------------------------
 
-
-
-
-/* ===============================================================
-	The for-in object loop
-------------------------------------------------------------------	
-
-	for(var key in obj){
-		obj[key]
-	}
-*/
+     for(var key in obj){
+     obj[key]
+     }
+     */
     console.log("---------- Object - For In Loop ----------------");
 
-var students = {name:"JamesBond", gender:"male",job:"student"};
+    var students = {name: "JamesBond", gender: "male", job: "student"};
 
-for(var key in students){
+    for (var key in students) {
         console.log('Key Name: ', key);
-        console.log('Value of the key[',key,']:',students[key]);
+        console.log('Value of the key[', key, ']:', students[key]);
     }
 
 
+    /*
+     ===============================================
+     MORE Object infomation
+
+     - most strictly-typed languages have clear separations in their data types
+     and classical behavior
+
+     - JavaScript is simpler:
+     - numbers, strings, and booleans are the only separate data types in JavaScript
+     - objects, arrays, regular expressions, and functions are all considered
+     to be objects.
+     - in addition, anything that is not an object, acts like an object
+
+     i.e.   "Literal Syntax"
+     myStr = ‘James Bond’;
+     alert(myStr.length)   //will return a 10
 
 
+     - previously, we used the most common constructor for creating our
+     variables, which is the literal syntax:
 
-/*
-	===============================================
-	MORE Object infomation
-	
-		- most strictly-typed languages have clear separations in their data types 
-			and classical behavior
+     var myNum = 5;
 
-		- JavaScript is simpler:
-			- numbers, strings, and booleans are the only separate data types in JavaScript
-			- objects, arrays, regular expressions, and functions are all considered 
-				to be objects.
-			- in addition, anything that is not an object, acts like an object
+     - we could also create this variable using its "constructor" equivalent:
 
-			i.e.   "Literal Syntax"
-			myStr = ‘James Bond’;
-			alert(myStr.length)   //will return a 10
+     var myNum = new Number(5);
 
+     - both have the same result - the literal syntax is preferable
 
-			- previously, we used the most common constructor for creating our 
-				variables, which is the literal syntax:
-
-				var myNum = 5;
-
-			- we could also create this variable using its "constructor" equivalent:
-	
-				var myNum = new Number(5);
-
-			- both have the same result - the literal syntax is preferable	
-
-			- using these constructors, we can also convert from one data type to another.
-*/
+     - using these constructors, we can also convert from one data type to another.
+     */
     console.log('------ Objects - Converting Datatypes ----------');
 
     var myNum = 1;
@@ -299,12 +292,12 @@ for(var key in students){
     console.log('myBool:,', typeof myBool, myBool);
 
 
-/*
-	- because these values act as objects, the data types also have methods and 
-		properties, just like an object...  
-	- we’ve already looked at one, the .length property, which can be used on 
-		both strings and arrays.
-*/
+    /*
+     - because these values act as objects, the data types also have methods and
+     properties, just like an object...
+     - we’ve already looked at one, the .length property, which can be used on
+     both strings and arrays.
+     */
 
 // #1 - shows string length
     myStr = 'OMG';
@@ -314,7 +307,7 @@ for(var key in students){
 // #2 - shows array length
     myArr = [6, 10];
     console.log(myArr.length);
-	
+
 
 // #3 - shows and array of objects, inside of an object length
 
@@ -322,205 +315,226 @@ for(var key in students){
         schoolName: 'Full Sail',
         address: '123 University Ave',
         studentCount: 16000,
-        students:[
-            {name: 'James Bond', gpa: 3.9, classes: ['PWA1','PWA2']},
-            {name:'Albert Einstein', gpa:4.0},
-            {name:'James Bond', gpa:3.9}
+        students: [
+            {name: 'James Bond', gpa: 3.9, classes: ['PWA1', 'PWA2']},
+            {name: 'Albert Einstein', gpa: 4.0},
+            {name: 'James Bond', gpa: 3.9}
         ]
 
     };
 
     console.log('number of objects fields', obj1.students.length);
 
-	
 
-console.log('------ MORE Object examples - Objects/Functions ----------');
+    console.log('------ MORE Object examples - Objects/Functions ----------');
 
 // showing a function call and creating a method
 
-var fn = function(name, course){
-    return{
-        sayHi: function(){
-            console.log("My name is "+ name + "I am in course " + course);
+    var fn = function (name, course) {
+        return{
+            sayHi: function () {
+                console.log("My name is " + name + "I am in course " + course);
+            }
         }
-    }
-};
-    fn("JamesBong","PWA1").sayHi();
+    };
+    fn("JamesBong", "PWA1").sayHi();
 
 
+    /*
+     ==================================================================
+     DOCUMENT OBJECT MODEL
+     ------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-/*
-	==================================================================
-	DOCUMENT OBJECT MODEL
-	------------------------------------------------------------------
-
-	document	// global DOM object
-	window		// global DOM object
-*/
-console.log('------------ DOCUMENT OBJECT MODEL -------------------');
+     document	// global DOM object
+     window		// global DOM object
+     */
+    console.log('------------ DOCUMENT OBJECT MODEL -------------------');
 
 //Window DOM object
 
- console.log(window);
- console.log(window.location);
- console.log(window.history);
- console.log(window.navigator);
+    console.log(window);
+    console.log(window.location);
+    console.log(window.history);
+    console.log(window.navigator);
 
-/*
- //Document DOM object
- console.log(document);
- console.log(document.body);
- console.log(document.head);
-*/
+    /*
+     //Document DOM object
+     console.log(document);
+     console.log(document.body);
+     console.log(document.head);
+     */
 
 
-/*
-	==================================================================
-	document.getElementById(string);
-	------------------------------------------------------------------
-	- Finds an html element on the page by it's CSS ID.
-	- RETURNS a single DOM object.
-	- Requires a string. 
-	- If there are more than 1 id, it returns the first.
+    /*
+     ==================================================================
+     document.getElementById(string);
+     ------------------------------------------------------------------
+     - Finds an html element on the page by it's CSS ID.
+     - RETURNS a single DOM object.
+     - Requires a string.
+     - If there are more than 1 id, it returns the first.
 
-	------------------------------------------------------------------
-	BEST PRACTICE:
-	
-	- Save the html element to a variable for later reference.
-	- Code shouldn't repeat itself. Code shouldn't repeat itself.
-*/
+     ------------------------------------------------------------------
+     BEST PRACTICE:
 
-console.log('------------ getElementById -------------------');
+     - Save the html element to a variable for later reference.
+     - Code shouldn't repeat itself. Code shouldn't repeat itself.
+     */
+
+    console.log('------------ getElementById -------------------');
 
     var playbox = document.getElementById('playbox');
     console.log(playbox);
     playbox.style.backgroundColor = 'Red';
 
 
+    /*
+     ==================================================================
+     document.getElementsByTagName(string);
+     ------------------------------------------------------------------
+     - Finds all html elements on the page with a matching html tag
+     - RETURNS an array (collection) of DOM objects.
+     */
+
+    console.log('------------ getElementsByTagName -------------------');
+
+    var anchors = document.getElementsByTagName('a');
+    console.log(anchors);
+
+    console.log(anchors[1]);
 
 
-/*
-	==================================================================
-	document.getElementsByTagName(string);
-	------------------------------------------------------------------
-	- Finds all html elements on the page with a matching html tag
-	- RETURNS an array (collection) of DOM objects.
-*/
-
-console.log('------------ getElementsByTagName -------------------');
-
-var anchors = document.getElementsByTagName('a');
-console.log(anchors);
-
-console.log(anchors[1]);
+    for (i = 0, max = anchors.length; i < max; i++) {
+        console.log(anchors[i]);
+    }
 
 
-for (i=0, max=anchors.length; i<max; i++){
-    console.log(anchors[i]);
-}
+    /*
+     ==================================================================
+     document.querySelectorAll(string);
+     ------------------------------------------------------------------
+     - Uses a CSS selector expression to find all html elements that match the expression.
+     - Works much like stylesheet declarations (class and ID prefixes)
+
+     - RETURNS an array (collection) of DOM objects. Even if there is 1 object.
+     versus the getElementByID (that returns a single DOM element)
+     */
+
+    console.log('------------ querySelectorAll -------------------');
 
 
-/*
-	==================================================================
-	document.querySelectorAll(string);
-	------------------------------------------------------------------
-		- Uses a CSS selector expression to find all html elements that match the expression.
-		- Works much like stylesheet declarations (class and ID prefixes)
+    /*
+     ==================================================================
+     document.querySelector(string);
+     ------------------------------------------------------------------
+     - Works just like querySelectorAll, but only returns the first match,
+     If multiple exist, return the first
 
-		- RETURNS an array (collection) of DOM objects. Even if there is 1 object.
-			versus the getElementByID (that returns a single DOM element)
-*/
-
-console.log('------------ querySelectorAll -------------------');
-
-
-
-
-/*
-	==================================================================
-	document.querySelector(string);
-	------------------------------------------------------------------
-		- Works just like querySelectorAll, but only returns the first match,
-			If multiple exist, return the first
-		
-		- RETURNS a single DOM object.
-*/
+     - RETURNS a single DOM object.
+     */
     console.log('------------ querySelector -------------------');
 
-var nav = document.querySelectorAll('#nav li:last-child');
-console.log(nav);
+    var nav = document.querySelectorAll('#nav li:last-child');
+    console.log(nav);
 
-var cf = document.querySelectorAll('.clearfix');
+    var cf = document.querySelectorAll('.clearfix');
     console.log(cf);
 
 
     /*
-        ==================================================================
-        TRAVERSAL
-        ------------------------------------------------------------------
-            - "Traversing" means finding other html elements from already selected
-                element(s)
-            - We use XML nodes for traversing
+     ==================================================================
+     TRAVERSAL
+     ------------------------------------------------------------------
+     - "Traversing" means finding other html elements from already selected
+     element(s)
+     - We use XML nodes for traversing
 
-        Traversing works by parent/child/sibling relationships:
+     Traversing works by parent/child/sibling relationships:
 
-            - firstChild
-            - lastChild
-            - parentNode
-            - nextSibling
-            - previousSibling
-            - childNodes
+     - firstChild
+     - lastChild
+     - parentNode
+     - nextSibling
+     - previousSibling
+     - childNodes
 
-        Will be used in ALL future assignments.
-    */
+     Will be used in ALL future assignments.
+     */
     console.log('------------ TRAVERSAL -------------------');
 
+    var apple = document.querySelectorAll('#nav li a')[2];
+    console.log(apple);
+    console.log((apple.parentNode.parentNode).nextSibling);
 
 
+    /*
+     ==================================================================
+     Manipulating Attributes
+     ------------------------------------------------------------------
+     - HTML elements have attributes, things like "href", "src", "title", etc
+     - To access these attributes, there are specific setter/getter methods.
 
-/*
-	==================================================================
-	Manipulating Attributes
-	------------------------------------------------------------------
-		- HTML elements have attributes, things like "href", "src", "title", etc
-		- To access these attributes, there are specific setter/getter methods.
+     Syntax:
+     - element.setAttribute(attr, value)
+     - always initializes an attribute to a new value
+     - element.getAttribute(attr)
+     - always returns a string
 
-        Syntax:
-        - element.setAttribute(attr, value)
-            - always initializes an attribute to a new value
-        - element.getAttribute(attr)
-            - always returns a string
+     attr = href, src, class
+     */
+    console.log('---------Manipulating Attributes setAttribute/getAttribute ----------------');
 
-        attr = href, src, class
-*/
+    var navLinks = document.querySelectorAll('#nav li');
+
+    for (var i = 0, max = navLinks.length; i < max; i++) {
+        var href = navLinks[i].firstChild.getAttribute('href');
+        console.log('Manipulation HREF: ', href);
+
+        if (href === '#1') {
+            var href2 = navLinks[i].firstChild;
+            console.log(href2);
+
+            href2.setAttribute('href', 'http://www.fullsail.com');
+        }
+        ;
+
+        /*
+         ==================================================================
+         Manipulating CSS Classes
+         ------------------------------------------------------------------
+         - If you use setAttribute to change the "class" attribute of an element,
+         that element is immediately redrawn with the new css styles.
+
+         - Just like normal, you can set MULTIPLE classes at once.
+
+         element.setAttribute('class', 'thumb active')
+
+         - FYI: Elements can have multiple classes.
+         */
+
+        console.log('------------ Manipulating CSS Classes -------------------');
 
 
+        var aClass = navLinks[i].firstChild.getAttribute('class');
+        console.log('Manipulation CLASS:', aClass);
 
-/*
-	==================================================================
-	Manipulating CSS Classes
-	------------------------------------------------------------------
-		- If you use setAttribute to change the "class" attribute of an element,
-			that element is immediately redrawn with the new css styles.
-		
-		- Just like normal, you can set MULTIPLE classes at once.
-		
-			element.setAttribute('class', 'thumb active')
+        navLinks[i].firstChild.setAttribute('class','navitem active');
+        console.log('----------- Manipulating HTML -----------');
 
-		- FYI: Elements can have multiple classes.
-*/
+        navLinks[i].firstChild.setAttribute('href','http://google.com');
 
-console.log('------------ Manipulating CSS Classes -------------------');
+    };
 
+    var navLinks = document.querySelectorAll('#nav a');
+    console.log(navLinks[1]);
 
+    navLinks[1].innerHTML = 'This link rocks!'
+
+    for (var i= 0, max = navLinks.length; i<max; i++){
+
+        navLinks[i].innerHTML = 'Click Me'
+
+    }
 /*
 	==================================================================
 	Replacing an HTML container with new HTML
@@ -532,37 +546,41 @@ console.log('------------ Manipulating CSS Classes -------------------');
 Sample Link: http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg
 */
 
+    var bigImage = document.querySelector('#contentPreview img');
+
+    bigImage.setAttribute('src','http://www.instructables.com/files/deriv/FJI/WGSW/FPIUQQ3K/FJIWGSWFPIUQQ3K.MEDIUM.jpg');
 
 
-/*
-	==================================================================
-	DOM Events  (lecture slides)
-	------------------------------------------------------------------
-		- listener and handler
-		- there are 2 key aspects to any event, the event listener and the event handler
-			1. the event listener is an property associated with the DOM that waits for the event trigger to 
-				occur (i.e click, mouseover), and then fires the event handler
-			2. the event handler is the function that will execute when the event is fired
 
-		- using dot syntax, the listener for any element is available as a property 
+    /*
+        ==================================================================
+        DOM Events  (lecture slides)
+        ------------------------------------------------------------------
+            - listener and handler
+            - there are 2 key aspects to any event, the event listener and the event handler
+                1. the event listener is an property associated with the DOM that waits for the event trigger to
+                    occur (i.e click, mouseover), and then fires the event handler
+                2. the event handler is the function that will execute when the event is fired
 
-		- An event listener is all lowercase with the prefix "on"
-		
-			element.onclick		//click listener
-			element.onmousemove			//mousemove listener
-	
+            - using dot syntax, the listener for any element is available as a property
 
-		- The function is the event handler.  Can be anonymous or named.
+            - An event listener is all lowercase with the prefix "on"
 
-			elementObj.onclick = myFn;
-			element.onclick = function(){};
+                element.onclick		//click listener
+                element.onmousemove			//mousemove listener
 
-		- every event listener automatically passes an "event" object with information about the event  
-		- the function's only argument is the EVENT OBJECT (e)
-		- the handler must receive it as an argument
-		- many developers will use the "e" as the function parameter
-		- The function's CONTEXT (this) is the html element.	
-*/
+
+            - The function is the event handler.  Can be anonymous or named.
+
+                elementObj.onclick = myFn;
+                element.onclick = function(){};
+
+            - every event listener automatically passes an "event" object with information about the event
+            - the function's only argument is the EVENT OBJECT (e)
+            - the handler must receive it as an argument
+            - many developers will use the "e" as the function parameter
+            - The function's CONTEXT (this) is the html element.
+    */
 console.log('------------ DOM Events Ex 1-------------------');
 
 var nav = document.querySelectorAll('#nav li a');
