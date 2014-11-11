@@ -26,8 +26,8 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk3/goal4_objects_DOM_events/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8369099" vertical-offset="3300" max-vertical-offset="8505">
-              <caret line="233" column="24" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.22189349" vertical-offset="5505" max-vertical-offset="9270">
+              <caret line="372" column="30" selection-start-line="372" selection-start-column="30" selection-end-line="372" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -73,10 +73,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="529" />
+    <option name="x" value="703" />
+    <option name="y" value="152" />
     <option name="width" value="1239" />
-    <option name="height" value="330" />
+    <option name="height" value="435" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -262,7 +262,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="529" width="1239" height="330" extended-state="0" />
+    <frame x="703" y="152" width="1239" height="435" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -566,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk3/goal4_objects_DOM_events/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8369099" vertical-offset="3300" max-vertical-offset="8505">
-          <caret line="233" column="24" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.22189349" vertical-offset="5505" max-vertical-offset="9270">
+          <caret line="372" column="30" selection-start-line="372" selection-start-column="30" selection-end-line="372" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

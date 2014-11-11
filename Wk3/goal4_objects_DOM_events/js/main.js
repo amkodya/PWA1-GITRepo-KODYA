@@ -248,6 +248,15 @@ console.log('----- activity 2 -----');
 */
     console.log("---------- Object - For In Loop ----------------");
 
+var students = {name:"JamesBond", gender:"male",job:"student"};
+
+for(var key in students){
+        console.log('Key Name: ', key);
+        console.log('Value of the key[',key,']:',students[key]);
+    }
+
+
+
 
 
 /*
@@ -283,6 +292,11 @@ console.log('----- activity 2 -----');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
+    var myNum = 1;
+    myString = String(myNum);
+    console.log('myString:', typeof myString, myString);
+    myBool = Boolean(myString);
+    console.log('myBool:,', typeof myBool, myBool);
 
 
 /*
@@ -293,17 +307,53 @@ console.log('----- activity 2 -----');
 */
 
 // #1 - shows string length
+    myStr = 'OMG';
+    console.log(myStr.length);
 
 
 // #2 - shows array length
+    myArr = [6, 10];
+    console.log(myArr.length);
 	
 
 // #3 - shows and array of objects, inside of an object length
+
+    var obj1 = {
+        schoolName: 'Full Sail',
+        address: '123 University Ave',
+        studentCount: 16000,
+        students:[
+            {name: 'James Bond', gpa: 3.9, classes: ['PWA1','PWA2']},
+            {name:'Albert Einstein', gpa:4.0},
+            {name:'James Bond', gpa:3.9}
+        ]
+
+    };
+
+    console.log('number of objects fields', obj1.students.length);
+
 	
 
 console.log('------ MORE Object examples - Objects/Functions ----------');
 
 // showing a function call and creating a method
+
+var fn = function(name, course){
+    return{
+        sayHi: function(){
+            console.log("My name is "+ name + "I am in course " + course);
+        }
+    }
+};
+    fn("JamesBong","PWA1").sayHi();
+
+
+
+
+
+
+
+
 
 
 
@@ -318,17 +368,18 @@ console.log('------ MORE Object examples - Objects/Functions ----------');
 console.log('------------ DOCUMENT OBJECT MODEL -------------------');
 
 //Window DOM object
-/*
+
  console.log(window);
  console.log(window.location);
  console.log(window.history);
  console.log(window.navigator);
 
+/*
  //Document DOM object
  console.log(document);
  console.log(document.body);
  console.log(document.head);
- */
+*/
 
 
 /*
