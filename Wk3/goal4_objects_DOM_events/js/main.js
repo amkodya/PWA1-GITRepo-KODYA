@@ -214,6 +214,26 @@ console.log('James Bonds GPA:', obj1['students'][2]['gpa']);
 
     2.  console.log the average grade by calling the gradeAvg method.
 ----------------------------------------------------------------------------- */
+console.log('----- activity 2 -----');
+
+    console.log(' --- 1 ---');
+
+    console.log('a.');
+
+    var gradeAvg = function(obj){
+        var count = 0;
+        var total = 0;
+        for (var i= 0, j = obj.students.length; i<j; i++){
+            count++;
+        total = total + obj.students[i]['gpa'];
+
+    };
+        return total/count;
+    };
+
+    console.log('Average Grade: ', gradeAvg(obj1));
+
+
 
 
 
