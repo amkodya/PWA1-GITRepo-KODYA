@@ -400,6 +400,10 @@ console.log('------------ DOCUMENT OBJECT MODEL -------------------');
 
 console.log('------------ getElementById -------------------');
 
+    var playbox = document.getElementById('playbox');
+    console.log(playbox);
+    playbox.style.backgroundColor = 'Red';
+
 
 
 
@@ -413,7 +417,15 @@ console.log('------------ getElementById -------------------');
 
 console.log('------------ getElementsByTagName -------------------');
 
+var anchors = document.getElementsByTagName('a');
+console.log(anchors);
 
+console.log(anchors[1]);
+
+
+for (i=0, max=anchors.length; i<max; i++){
+    console.log(anchors[i]);
+}
 
 
 /*
@@ -443,8 +455,11 @@ console.log('------------ querySelectorAll -------------------');
 */
     console.log('------------ querySelector -------------------');
 
+var nav = document.querySelectorAll('#nav li:last-child');
+console.log(nav);
 
-
+var cf = document.querySelectorAll('.clearfix');
+    console.log(cf);
 
 
     /*
