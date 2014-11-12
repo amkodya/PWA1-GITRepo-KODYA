@@ -68,12 +68,12 @@ Assignment: Goal1: Assignment: Duel1
     // function at end of game either one player wins or both players die
     function winnerCheck(){           //invokes winnercheck function
         var result="no winner";             //result no winner
-        if (playerOne[2]<1 && playerTwo[2]<1){   // if both players damage is under 1, both players die    //changed to array variable
+        if (playerOne.health<1 && playerTwo.health<1){   // if both players damage is under 1, both players die    //changed to object variable
             result = "You Both Die :(";            //sends "you both die" to alert
-        }else if(playerOne[2]<1){                //if player1 health is under 1                           //changed to array  variable
-            result =playerTwo[0]+" WINS!!!";     //then player 2 wins - put out to alert box              //changed to array  variable
-        }else if (playerTwo[2]<1){              // if player2 health under 1                               //changed to array variable
-            result = playerOne[0]+" WINS!!!";     //then player 2 wins and result is put into alert          //changed to array variable
+        }else if(playerOne[.health<1){                //if player1 health is under 1                           //changed to object  variable
+            result =playerTwo.name+" WINS!!!";     //then player 2 wins - put out to alert box              //changed to object  variable
+        }else if (playerTwo.health<1){              // if player2 health under 1                               //changed to object variable
+            result = playerOne.name+" WINS!!!";     //then player 2 wins and result is put into alert          //changed to object variable
         };
         return result;                     //returns result out of function
     };
