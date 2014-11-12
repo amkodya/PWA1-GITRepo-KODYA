@@ -585,15 +585,27 @@ console.log('------------ DOM Events Ex 1-------------------');
 
 var nav = document.querySelectorAll('#nav li a');
 
+ /*   for(i = 0, max=nav.length; i<max; i++){
+        console.log(nav[i]);
 
-/*
+        nav[i].onclick = function(e){
+            console.log(e);
+
+
+
+
 // this just console.log's when a click occurs
 
 
 
 
+  }
 
-*/
+  e.preventDefault();
+  return false;
+  }
+
+
 
 
 /*
@@ -622,6 +634,27 @@ var nav = document.querySelectorAll('#nav li a');
 
 
 console.log('------------ DOM Events Ex 2 -------------------');
+
+/*
+for (var i=0, max=nav.length; i<max; i++){
+
+    nav[i].onclick = function(e){
+        nav[ii].setAttribute('class','navitem');
+
+    };
+    console.log(this);
+    this.setAttribute('class','navtime active');
+
+    e.preventDefault();
+    return false;
+
+};
+
+
+
+
+*/
+
 /*
 // this example changes the clicked link to the active class
 
@@ -633,14 +666,35 @@ console.log('------------ DOM Events Ex 2 -------------------');
 
 
 console.log('------------ DOM Events Ex 3 -------------------');
-/*
+
 // a more efficient way to do the above
 
+nav[0].setAttribute('class','navitem active');
+
+ for(var i=0, max=nav.length; i<max; i++){
+
+ nav[i].onclick = function(e){
+
+     // nav[ii].setAttribute('class','navitem');
+
+
+
+     document.querySelector('#nav li a.active').setAttribute('class','navitem');
+
+ console.log(this);
+ this.setAttribute('class','navitem active');
+
+ e.preventDefault();
+ return false;
+
+ };
+
+
+ };
 
 
 
 
-*/
 
 
 })(); // end wrapper
