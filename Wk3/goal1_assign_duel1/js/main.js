@@ -31,21 +31,21 @@ Assignment: Goal1: Assignment: Duel1
 
                                           // function to randomize damage taken of both players
     function fight(){
-        alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+ playerTwo[0]+":"+playerTwo[2]);  //changed to array variables
+        alert(playerOne.name+":"+playerOne.health+"  *START*  "+ playerTwo.name+":"+playerTwo.health);  //changed to object variables
         for (var i = 0; i < 10; i++){
             //Math.floor(Math.random() * (max - min) + min);
-            var minDamage1 = playerOne[1] * .5;       //change to array playerOne[1]
-            var minDamage2 = playerTwo[1] * .5;      //change to array playerTwo[1]
-            var f1 = Math.floor(Math.random()*(playerOne[1]-minDamage1)+minDamage1);   //changed to array playerOne[1]
-            var f2 = Math.floor(Math.random()*(playerTwo[1]-minDamage2)+minDamage2);   //changed to array playerTwo[1]
+            var minDamage1 = playerOne.damage * .5;       //change to object variable
+            var minDamage2 = playerTwo.damage * .5;      //change to object variable
+            var f1 = Math.floor(Math.random()*(playerOne.damage-minDamage1)+minDamage1);   //changed to object variable
+            var f2 = Math.floor(Math.random()*(playerTwo.damage-minDamage2)+minDamage2);   //changed to object variable
 
                                         //damage taken of both players for each round
-            playerOne[2]-=f1;            //changed to array variable
-            playerTwo[2]-=f2;            //changed to array variable
+            playerOne.health-=f1;            //changed to object variable
+            playerTwo.health-=f2;            //changed to object variable
 
 
            //shows in the console log what health each player has at the end of each round
-            console.log(playerOne[0]+": "+playerOne[2] + " " + playerTwo[0]+":"+playerTwo[2]);   //changed to array variables
+            console.log(playerOne.name+": "+playerOne.health + " " + playerTwo.name+":"+playerTwo.health);   //changed to object variables
 
             // check if there is a winner
             var result = winnerCheck();         //variable function winnercheck()
@@ -56,7 +56,7 @@ Assignment: Goal1: Assignment: Duel1
             //until there is a winner or till both players die
             if (result==="no winner"){                            // result of round - no winner
                 round++;                                          //advanced to next round
-                alert(playerOne[0]+":"+playerOne[2]+"  *ROUND "+round+" OVER* "+playerTwo[0]+":"+playerTwo[2]);  //changed to array variables
+                alert(playerOne.name+":"+playerOne.health+"  *ROUND "+round+" OVER* "+playerTwo.name+":"+playerTwo.health);  //changed to object variables
             }else{                           // ^^ alert for player's score at the end of each round
                 alert(result);    //result of game given in alert from winnercheck function
                 break;            //breaks from loop
