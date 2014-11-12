@@ -13,15 +13,8 @@ Assignment: Goal1: Assignment: Duel1
     console.log("FIGHT!!!");              //prints "FIGHT" to console.log
                                           //variables named and set
     //player name
-    var playerOne = {};                   //changed to object
-    playerOne.name = 'Spiderman';
-    playerOne.damage = 20;
-    playerOne.health = 100;
-    
-    var playerTwo = {};                   //changed to object
-    playerTwo.name = 'Batman';
-    playerTwo.damage = 20;
-    playerTwo.health = 100;
+    var playerOne = {name:'Spiderman', damage:20, health:100};  //changed to object
+    var playerTwo = {name:'Batman', damage:20, health:100};     //changed to object
 
     /*player damage
     var player1Damage = 20;                       //player1 max damage taken per round variable
