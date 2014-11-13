@@ -22,13 +22,14 @@ function addData(){
 
 
 
-    var stdnt1 = {
+    var std1 = {
         stdName: student1.name,
         stdAddress: [
             {street: student1.address.street},
             {city: student1.address.city },
             {state:student1.address.state }
-            ]
+            ],
+
         stdGPA: [
             {GPA: student1.gpa[0]},
             {GPA: student1.gpa[1]},
@@ -36,6 +37,10 @@ function addData(){
         ]
 
     };
+
+    console.log('Student Name: '+std1.stdName);
+    console.log('Student Address: '+std1.stdAddress);
+    console.log('Student GPA: '+std1.stdGPA);
 
 
 
