@@ -24,9 +24,8 @@ Assignment: Goal1: Assignment: Duel1
     var playerOneHealth = 100;                   //player1 starting damage variable
     var playerTwoHealth = 100;*/                //player2 starting damage variable
 
-    //initiate round                       //starts first round
-
-    var round=0;
+    //initiate round
+    var round=0;                        //starts first round
 
 
     var currentScore1 = document.getElementById("kabal");
@@ -35,10 +34,13 @@ Assignment: Goal1: Assignment: Duel1
     var currentScore2 = document.getElementById("kratos");
     currentScore2.innerHTML = playerTwo.name + ":" + playerTwo.health;     // changed to getElementById to access DOM
 
+    var introMsg = document.getElementById("round_number");
+    introMsg.innerHTML = "Click below to begin!!!";     // changed to getElementById to access DOM
+
 
 
         // function to randomize damage taken of both players
-    var clickButton = document.getElementById('fight_btn');
+    var clickButton = document.getElementById('fight_btn');   //click object FIGHT box to begin function
     clickButton.onclick = function fight(){
 
 
@@ -83,8 +85,8 @@ Assignment: Goal1: Assignment: Duel1
 
                 //changed to object variables
             } else {                           // ^^ alert for player's score at the end of each round
-                 var showResults = document.getElementById('scores');
-                showResults.innerHTML = result;
+                 var showResults = document.getElementById('scores');   //displays scores at the end of game
+                showResults.innerHTML = result;                         //shows scores at end of game
 
                    //result of game given in alert from winnercheck function // changed to getElementById to access DOM
                 //break;            //breaks from loop
