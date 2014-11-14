@@ -103,12 +103,16 @@ Assignment: Goal1: Assignment: Duel1
         var result="no winner";             //result no winner
         if (playerOne.health<1 && playerTwo.health<1){   // if both players damage is under 1, both players die    //changed to object variable
             result = "You Both Die :(";            //sends "you both die" to alert
+            document.getElementById('fight_btn').style.pointerEvents = 'none';
         }else if(playerOne.health<1){                //if player1 health is under 1                           //changed to object  variable
             result =playerTwo.name+" WINS!!!";     //then player 2 wins - put out to alert box              //changed to object  variable
+            document.getElementById('fight_btn').style.pointerEvents = 'none';
         }else if (playerTwo.health<1){              // if player2 health under 1                               //changed to object variable
             result = playerOne.name+" WINS!!!";     //then player 2 wins and result is put into alert          //changed to object variable
+            document.getElementById('fight_btn').style.pointerEvents = 'none';
         };
         return result;                     //returns result out of function
+
     };
 
 
