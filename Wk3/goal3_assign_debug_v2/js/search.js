@@ -1,4 +1,9 @@
 // Create privatized scope using a self-executing function
+// Name: Ashley M. Kodya
+// Date: 11/14/2014
+// Class: PWA1 - section 01
+
+
 (function(){
 
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's) //shows the results page
